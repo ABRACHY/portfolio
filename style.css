@@ -318,19 +318,34 @@ h2 {
     background: linear-gradient(45deg, #111, #1a1a1a);
     position: relative;
     border-bottom: 1px solid #222;
+    overflow: hidden;
+}
+
+.project-preview iframe {
+    position: absolute;
+    top: 35px;
+    left: 0;
+    width: 1280px;
+    height: 800px;
+    border: none;
+    transform-origin: top left;
+    transform: scale(0.29);
+    pointer-events: none;
+    background: #111;
 }
 
 /* browser dots */
 .project-preview::before {
     content: '';
     position: absolute;
-    top: 15px;
+    top: 12px;
     left: 15px;
     width: 10px;
     height: 10px;
     border-radius: 50%;
     background: #ff5f56;
     box-shadow: 20px 0 0 #ffbd2e, 40px 0 0 #27c93f;
+    z-index: 2;
 }
 
 .card-content {
