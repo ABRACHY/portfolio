@@ -1,31 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    // scroll reveal
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('active');
-            }
-        });
-    }, { threshold: 0.15 });
-
-    document.querySelectorAll('section, h1, .card, form').forEach(el => {
-        el.classList.add('reveal');
-        observer.observe(el);
-    });
-
-    // shrink nav on scroll
-    const navContainer = document.querySelector('.nav-container');
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            navContainer.style.background = 'rgba(10, 10, 10, 0.95)';
-            navContainer.style.boxShadow = '0 0 20px rgba(101, 163, 13, 0.08), 0 4px 30px rgba(0, 0, 0, 0.6)';
-        } else {
-            navContainer.style.background = 'rgba(10, 10, 10, 0.85)';
-            navContainer.style.boxShadow = '0 0 20px rgba(101, 163, 13, 0.05), 0 4px 30px rgba(0, 0, 0, 0.4)';
-        }
-    });
-
     // smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', (e) => {
