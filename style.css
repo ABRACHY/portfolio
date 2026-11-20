@@ -1837,3 +1837,11 @@ button,
   border-radius: var(--site-corner);
 }
 .proj-card-image { border-radius: var(--site-corner); }
+.form-group label,
+.form-group .optional {
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  text-transform: none;
+}
