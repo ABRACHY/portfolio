@@ -1,305 +1,568 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abderrahim Rachidi | Full-Stack & WordPress Developer</title>
-    <meta name="description"
-        content="Full-stack and WordPress developer building fast, modern business websites that help clients get more customers.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abderrahim Rachidi — Frontend Developer & Digital Experience Creator</title>
+  <meta name="description" content="Frontend Developer based in Morocco building clean, purposeful digital experiences.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400&family=Inter:wght@400;500&family=Manrope:wght@800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
-        <div class="nav-container">
-            <nav>
-                <strong class="nav-brand">Abderrahim</strong>
-                <div class="nav-links">
-                    <a href="#">Home</a>
-                    <a href="#portfolio">Projects</a>
-                    <a href="#about">About</a>
-                    <a href="#contact">Contact</a>
-                </div>
-                <div class="socials">
-                    <a href="https://www.linkedin.com/in/abderrahim-rachidi-96b049362" target="_blank"
-                        rel="noopener noreferrer" aria-label="LinkedIn"><svg width="20" height="20" fill="currentColor"
-                            viewBox="0 0 24 24">
-                            <path
-                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-                        </svg></a>
-                </div>
-            </nav>
+  <!-- ═══════════════════ LANGUAGE SPLASH ═══════════════════ -->
+  <div id="lang-splash" role="dialog" aria-modal="true" aria-label="Language selection">
+    <div class="splash-inner">
+      <div class="splash-logo"><span>A</span><span class="accent-letter">R</span></div>
+      <p class="splash-name">Abderrahim Rachidi</p>
+      <p class="splash-hint mono">Select · Choisir · اختر</p>
+      <div class="splash-btns">
+        <button class="splash-lang-btn" data-lang="en" aria-label="English">
+          <span class="splang-code">EN</span>
+          <span class="splang-name">English</span>
+        </button>
+        <button class="splash-lang-btn" data-lang="fr" aria-label="Français">
+          <span class="splang-code">FR</span>
+          <span class="splang-name">Français</span>
+        </button>
+        <button class="splash-lang-btn" data-lang="ar" aria-label="العربية">
+          <span class="splang-code ar-code">ع</span>
+          <span class="splang-name ar-name">العربية</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════ NAV ═══════════════════════════════ -->
+  <header id="site-header">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo" aria-label="Home">
+        <span>A</span><span class="accent-letter">R</span>
+      </a>
+
+      <nav class="nav-links" role="navigation" aria-label="Main navigation">
+        <a href="#work"    class="nav-link" data-i18n="nav_work">Work</a>
+        <a href="#about"   class="nav-link" data-i18n="nav_about">About</a>
+        <a href="#skills"  class="nav-link" data-i18n="nav_skills">Skills</a>
+        <a href="#contact" class="nav-link" data-i18n="nav_contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Language switcher -->
+        <div class="lang-switcher" aria-label="Language switcher" role="group">
+          <button class="lang-sw-btn active" data-lang="en" aria-label="English">EN</button>
+          <button class="lang-sw-btn"        data-lang="fr" aria-label="Français">FR</button>
+          <button class="lang-sw-btn"        data-lang="ar" aria-label="العربية">ع</button>
         </div>
-    </header>
 
-    <main>
-        <section class="hero">
-            <div class="container hero-layout">
-                <div class="hero-text">
-                    <h1>Hey, I'm Abderrahim</h1>
-                    <p class="mono-lead">Full-stack and WordPress developer —
-                        I build clean business websites that look professional and turn visitors into real leads.</p>
-                    <a href="#contact" class="btn-primary">Start a project &gt;</a>
-                </div>
-                <div class="hero-image">
-                    <div class="image-wrapper">
-                        <img src="portfopic.jpg" alt="Abderrahim Rachidi">
-                    </div>
-                </div>
-            </div>
+        <a href="https://www.linkedin.com/in/abderrahim-rachidi-96b049362"
+           target="_blank" rel="noopener noreferrer" class="nav-social" aria-label="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+          </svg>
+        </a>
+        <a href="https://github.com/ABRACHY"
+           target="_blank" rel="noopener noreferrer" class="nav-social" aria-label="GitHub">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+          </svg>
+        </a>
 
-            <div class="container tech-stack">
-                <p class="mono-label">Tools I use</p>
-                <div class="marquee-wrapper">
-                    <div class="marquee-content">
-                        <span class="tech-item">HTML 5</span>
-                        <span class="tech-item">CSS 3</span>
-                        <span class="tech-item">JavaScript</span>
-                        <span class="tech-item">React.js</span>
-                        <span class="tech-item">WordPress</span>
-                        <span class="tech-item">PHP</span>
-                        <span class="tech-item">Tailwind CSS</span>
-                        <span class="tech-item">UI/UX Design</span>
-                        <!-- duplicate sets for the scroll loop -->
-                        <span class="tech-item">HTML 5</span>
-                        <span class="tech-item">CSS 3</span>
-                        <span class="tech-item">JavaScript</span>
-                        <span class="tech-item">React.js</span>
-                        <span class="tech-item">WordPress</span>
-                        <span class="tech-item">PHP</span>
-                        <span class="tech-item">Tailwind CSS</span>
-                        <span class="tech-item">UI/UX Design</span>
-                        <span class="tech-item">HTML 5</span>
-                        <span class="tech-item">CSS 3</span>
-                        <span class="tech-item">JavaScript</span>
-                        <span class="tech-item">React.js</span>
-                        <span class="tech-item">WordPress</span>
-                        <span class="tech-item">PHP</span>
-                        <span class="tech-item">Tailwind CSS</span>
-                        <span class="tech-item">UI/UX Design</span>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <button class="nav-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
 
-        <section id="services">
-            <div class="container">
-                <h2>What I Can Do For You</h2>
-                <div class="grid">
-                    <div class="card">
-                        <h3>Full-Stack Websites</h3>
-                        <p>I build complete websites with clean front-end interfaces and practical back-end features
-                            that support real business workflows.</p>
-                    </div>
-                    <div class="card">
-                        <h3>WordPress Development</h3>
-                        <p>Custom WordPress sites, landing pages, service pages, and contact flows that are easy to
-                            manage after launch.</p>
-                    </div>
-                    <div class="card">
-                        <h3>Lead-Focused Design</h3>
-                        <p>Fast loading, mobile-first layouts, clear sections, and contact buttons that help visitors
-                            take action quickly.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="portfolio">
-            <div class="container">
-                <h2>Some Things I've Built</h2>
-                <div class="grid">
-
-                    <div class="card project-card">
-                        <div class="project-preview">
-                            <iframe src="https://jahiz0.netlify.app" loading="lazy" title="Jahiz preview"></iframe>
-                        </div>
-                        <div class="card-content">
-                            <h3>Jahiz Cleaning Company</h3>
-                            <p>A professional cleaning company website with clear services, trust-building copy, and
-                                fast contact actions.</p>
-                            <div class="project-footer">
-                                <span class="tech-tag">Cleaning Website</span>
-                                <a href="https://jahiz0.netlify.app" target="_blank" rel="noopener noreferrer"
-                                    class="btn-link">View Live
-                                    &nearr;</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card project-card">
-                        <div class="project-preview">
-                            <iframe src="https://centrenour.site" loading="lazy" title="Centre Nour preview"></iframe>
-                        </div>
-                        <div class="card-content">
-                            <h3>Centre Nour</h3>
-                            <p>Professional site for a wellness center.</p>
-                            <div class="project-footer">
-                                <span class="tech-tag">Business</span>
-                                <a href="https://centrenour.site" target="_blank" rel="noopener noreferrer"
-                                    class="btn-link">View Live &nearr;</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card project-card">
-                        <div class="project-preview">
-                            <iframe src="https://merzougarestaurant.com" loading="lazy"
-                                title="Merzouga Restaurant preview"></iframe>
-                        </div>
-                        <div class="card-content">
-                            <h3>Merzouga Restaurant</h3>
-                            <p>Clean restaurant website with online menu.</p>
-                            <div class="project-footer">
-                                <span class="tech-tag">Hospitality</span>
-                                <a href="https://merzougarestaurant.com" target="_blank" rel="noopener noreferrer"
-                                    class="btn-link">View Live
-                                    &nearr;</a>
-                            </div>
-                        </div>
-                    </div>
+    <!-- Mobile menu -->
+    <div class="mobile-menu" role="dialog" aria-label="Navigation menu" aria-hidden="true">
+      <nav>
+        <a href="#work"    class="mobile-link" data-i18n="nav_work">Work</a>
+        <a href="#about"   class="mobile-link" data-i18n="nav_about">About</a>
+        <a href="#skills"  class="mobile-link" data-i18n="nav_skills">Skills</a>
+        <a href="#contact" class="mobile-link" data-i18n="nav_contact">Contact</a>
+      </nav>
+      <div class="mobile-lang-row">
+        <button class="lang-sw-btn active" data-lang="en" aria-label="English">EN</button>
+        <button class="lang-sw-btn"        data-lang="fr" aria-label="Français">FR</button>
+        <button class="lang-sw-btn"        data-lang="ar" aria-label="العربية">ع</button>
+      </div>
+      <div class="mobile-socials">
+        <a href="https://www.linkedin.com/in/abderrahim-rachidi-96b049362" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/ABRACHY" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="mailto:abdoforbusiness90@gmail.com">Email</a>
+      </div>
+    </div>
+  </header>
 
 
-                    <div class="card project-card">
-                        <div class="project-preview">
-                            <iframe src="https://edenboutiquehotel.ma" loading="lazy"
-                                title="Eden Boutique Hotel preview"></iframe>
-                        </div>
-                        <div class="card-content">
-                            <h3>Eden Boutique Hotel</h3>
-                            <p>Boutique hotel site with gallery and booking.</p>
-                            <div class="project-footer">
-                                <span class="tech-tag">Hotel</span>
-                                <a href="https://edenboutiquehotel.ma" target="_blank" rel="noopener noreferrer"
-                                    class="btn-link">View Live
-                                    &nearr;</a>
-                            </div>
-                        </div>
-                    </div>
+  <main>
 
-                    <div class="card project-card">
-                        <div class="project-preview">
-                            <iframe src="https://businesscenter20.netlify.app" loading="lazy"
-                                title="Business Center preview"></iframe>
-                        </div>
-                        <div class="card-content">
-                            <h3>Business Center</h3>
-                            <p>Professional site for an accounting firm.</p>
-                            <div class="project-footer">
-                                <span class="tech-tag">Accounting</span>
-                                <a href="https://businesscenter20.netlify.app" target="_blank" rel="noopener noreferrer"
-                                    class="btn-link">View
-                                    Live
-                                    &nearr;</a>
-                            </div>
-                        </div>
-                    </div>
+    <!-- ══════════════════════════════ HERO ══════════════════════════════ -->
+    <section class="hero" id="home" aria-labelledby="hero-headline">
+      <div class="hero-bg-grid" aria-hidden="true"></div>
 
-                </div>
-            </div>
-        </section>
+      <div class="hero-container">
+        <div class="hero-text">
+          <div class="hero-label reveal-up" aria-hidden="true">
+            <span class="avail-dot" aria-hidden="true"></span>
+            <span data-i18n="hero_avail">Available for new projects</span>
+          </div>
 
-        <section id="about">
-            <div class="container">
-                <h2>About Me</h2>
-                <div class="about-layout">
-                    <div class="about-bio">
-                        <p class="mono-label">Who I Am</p>
-                        <p class="lead-text">I'm Abderrahim — a self-taught full-stack and WordPress developer based in
-                            Morocco. I build practical websites for businesses that need a strong online presence.
-                        </p>
-                        <p>I learned by doing: building pages, fixing problems, improving performance, and turning rough
-                            ideas into websites people can actually use. Every project makes the next one sharper.</p>
-                    </div>
+          <h1 class="hero-headline" id="hero-headline">
+            <span class="hl-line reveal-up" style="--delay:.05s" data-i18n="hero_h1">Websites made</span>
+            <span class="hl-line hl-accent reveal-up" style="--delay:.12s" data-i18n="hero_h2">with care.</span>
+            <span class="hl-line reveal-up" style="--delay:.19s" data-i18n="hero_h3"></span>
+            <span class="hl-line reveal-up" style="--delay:.26s" data-i18n="hero_h4"></span>
+          </h1>
 
-                    <div class="about-features">
-                        <p class="mono-label">Why work with me</p>
-                        <div class="feature-grid">
-                            <div class="feature-card">
-                                <h3>I actually care</h3>
-                                <p>This isn't just a job for me. I genuinely enjoy building stuff and I want your site
-                                    to
-                                    be something I'm proud to show off too.</p>
-                            </div>
-                            <div class="feature-card">
-                                <h3>I sweat the details</h3>
-                                <p>Pixel-level stuff, smooth transitions, clean code. The things most people don't
-                                    notice but definitely feel.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+          <p class="hero-sub reveal-up" style="--delay:.38s" data-i18n="hero_sub">
+            I'm Abderrahim Rachidi — a self-taught frontend developer from Morocco.
+            I craft purposeful websites that help businesses connect with real people.
+          </p>
 
-        <section id="contact">
-            <div class="container">
-                <h2>Get In Touch</h2>
-                <p>Tell me about your website project and I will receive it directly on WhatsApp.</p>
+          <div class="hero-ctas reveal-up" style="--delay:.48s">
+            <a href="#work"    class="btn-primary" data-i18n="hero_cta1">Explore My Work</a>
+            <a href="#contact" class="btn-ghost"   data-i18n="hero_cta2">Let's Talk</a>
+          </div>
 
-                <form id="whatsapp-contact-form">
-
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="contact-name">Name</label>
-                            <input type="text" name="name" id="contact-name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="contact-phone">Phone or WhatsApp</label>
-                            <input type="tel" name="phone" id="contact-phone" required>
-                        </div>
-                    </div>
-
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="contact-email">Email</label>
-                            <input type="email" name="email" id="contact-email">
-                        </div>
-                        <div class="form-group">
-                            <label for="contact-service">Project type</label>
-                            <select name="service" id="contact-service" required>
-                                <option value="">Choose one</option>
-                                <option value="Business website">Business website</option>
-                                <option value="WordPress website">WordPress website</option>
-                                <option value="Landing page">Landing page</option>
-                                <option value="Website redesign">Website redesign</option>
-                                <option value="Other">Other</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="contact-message">Message</label>
-                        <textarea name="message" id="contact-message" rows="4"
-                            placeholder="Example: I need a cleaning company website like Jahiz with services, gallery, and WhatsApp contact."
-                            required></textarea>
-                    </div>
-
-                    <button type="submit" class="btn-primary">Send on WhatsApp &gt;</button>
-                </form>
-
-                <div class="contact-info">
-                    <p><strong>Email:</strong> <a href="mailto:abdoforbusiness90@gmail.com"
-                            class="btn-link">abdoforbusiness90@gmail.com</a></p>
-                    <p><strong>WhatsApp:</strong> <a href="https://wa.me/212702446125" target="_blank"
-                            rel="noopener noreferrer" class="btn-link">0702446125</a></p>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; <span id="footer-year">2026</span> Abderrahim Rachidi</p>
+          <div class="hero-socials reveal-up" style="--delay:.56s">
+            <a href="https://www.linkedin.com/in/abderrahim-rachidi-96b049362" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <span class="dot-sep" aria-hidden="true">·</span>
+            <a href="https://github.com/ABRACHY" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <span class="dot-sep" aria-hidden="true">·</span>
+            <a href="mailto:abdoforbusiness90@gmail.com">Email</a>
+          </div>
         </div>
-    </footer>
 
-    <script src="script.js"></script>
+        <div class="hero-visual reveal-scale" style="--delay:.1s" aria-hidden="true">
+          <div class="hero-photo-frame">
+            <img src="portfopic.jpg" alt="Abderrahim Rachidi" class="hero-photo" fetchpriority="high" decoding="async">
+            <div class="hero-frame-deco"></div>
+          </div>
+          <div class="hero-badge hero-badge--1">
+            <span class="mono" data-i18n="hero_badge1">Frontend Dev</span>
+          </div>
+          <div class="hero-badge hero-badge--2">
+            <span class="mono" data-i18n="hero_badge2">Morocco 🇲🇦</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-scroll" aria-hidden="true" hidden>
+        <span class="mono" data-i18n="scroll_hint">Scroll</span>
+        <div class="scroll-track"><div class="scroll-thumb"></div></div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════ MARQUEE BAR ══════════════════════════ -->
+    <div class="marquee-bar" aria-hidden="true">
+      <div class="marquee-track">
+        <div class="marquee-inner">
+          <span>HTML</span><em>—</em><span>CSS</span><em>—</em>
+          <span>JavaScript</span><em>—</em><span>TypeScript</span><em>—</em>
+          <span>React</span><em>—</em><span>Tailwind CSS</span><em>—</em>
+          <span>Git</span><em>—</em><span>GitHub</span><em>—</em><span>VS Code</span><em>—</em>
+          <span>HTML</span><em>—</em><span>CSS</span><em>—</em>
+          <span>JavaScript</span><em>—</em><span>TypeScript</span><em>—</em>
+          <span>React</span><em>—</em><span>Tailwind CSS</span><em>—</em>
+          <span>Git</span><em>—</em><span>GitHub</span><em>—</em><span>VS Code</span><em>—</em>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ══════════════════════════════ ABOUT ══════════════════════════════ -->
+    <section id="about" class="section about-section">
+      <div class="section-wrap">
+        <div class="section-label-row">
+          <span class="mono sec-num" data-i18n="sec_01">01</span>
+          <span class="sec-name" data-i18n="sec_01_name">About</span>
+        </div>
+
+        <div class="about-layout">
+          <div class="about-left">
+            <h2 class="sec-heading reveal-up" data-i18n-html="about_heading">
+              I design and build<br>websites for <em>people</em><br>and businesses.
+            </h2>
+          </div>
+
+          <div class="about-right reveal-up" style="--delay:.15s">
+            <p class="about-lead" data-i18n="about_lead">
+              I'm Abderrahim — a self-taught frontend developer and digital experience creator based in Morocco.
+            </p>
+            <p data-i18n="about_p1">
+              I got into web development because I was fascinated by the gap between what an idea looks like in someone's head and what actually ends up on screen. That gap is where I work.
+            </p>
+            <p data-i18n-html="about_p2">
+              I learned by doing: building pages, fixing problems, and slowly developing a sense for what makes a digital product feel <em>right</em> — not just functional, but intentional. Every project I take on is a chance to combine clean code with thoughtful design.
+            </p>
+            <p data-i18n="about_p3">
+              I care about performance, accessibility, and the kind of details most people don't consciously notice — but definitely feel.
+            </p>
+
+            <div class="about-values">
+              <div class="value-item">
+                <span class="mono value-label" data-i18n="val1_label">Philosophy</span>
+                <span class="value-text" data-i18n="val1_text">Build with intention. Ship with clarity.</span>
+              </div>
+              <div class="value-item">
+                <span class="mono value-label" data-i18n="val2_label">Approach</span>
+                <span class="value-text" data-i18n="val2_text">Design-first, code-informed, user-centered.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════ WORK ═══════════════════════════════ -->
+    <section id="work" class="section work-section">
+      <div class="section-wrap">
+        <div class="work-header">
+          <div class="section-label-row">
+            <span class="mono sec-num" data-i18n="sec_02">02</span>
+            <span class="sec-name" data-i18n="sec_02_name">Selected Work</span>
+          </div>
+          <p class="work-desc" data-i18n="work_desc">A selection of digital experiences built for real businesses.</p>
+        </div>
+
+        <div class="proj-grid proj-grid--featured js-reveal" aria-label="Recent projects">
+          <article class="proj-card"><a href="https://hvac.umareq.com/" target="_blank" rel="noopener noreferrer" class="proj-card-link"><img class="proj-card-image" src="project-hvac-umareq.png" alt="HVAC UMAREQ website preview" loading="lazy" decoding="async"><div class="proj-card-top"><span class="proj-card-num mono">01</span><span class="proj-card-arrow">↗</span></div><div class="proj-card-body"><span class="proj-cat">HVAC</span><h3 class="proj-card-title">hvac.umareq.com</h3></div></a></article>
+          <article class="proj-card proj-card--offset"><a href="https://climatisationmarocpro.com/" target="_blank" rel="noopener noreferrer" class="proj-card-link"><img class="proj-card-image" src="project-climatisation-pro.jpg" alt="Climatisation Maroc Pro website preview" loading="lazy" decoding="async"><div class="proj-card-top"><span class="proj-card-num mono">02</span><span class="proj-card-arrow">↗</span></div><div class="proj-card-body"><span class="proj-cat">HVAC</span><h3 class="proj-card-title">climatisationmarocpro.com</h3></div></a></article>
+          <article class="proj-card"><a href="https://climatisationmaroc.com/" target="_blank" rel="noopener noreferrer" class="proj-card-link"><img class="proj-card-image" src="project-climatisation-maroc.webp" alt="Climatisation Maroc website preview" loading="lazy" decoding="async"><div class="proj-card-top"><span class="proj-card-num mono">03</span><span class="proj-card-arrow">↗</span></div><div class="proj-card-body"><span class="proj-cat">HVAC</span><h3 class="proj-card-title">climatisationmaroc.com</h3></div></a></article>
+          <article class="proj-card proj-card--offset"><a href="https://eden-parts.netlify.app/" target="_blank" rel="noopener noreferrer" class="proj-card-link"><img class="proj-card-image proj-card-image--contain" src="project-eden-parts.png" alt="Eden Parts logo" loading="lazy" decoding="async"><div class="proj-card-top"><span class="proj-card-num mono">04</span><span class="proj-card-arrow">↗</span></div><div class="proj-card-body"><span class="proj-cat">Auto parts</span><h3 class="proj-card-title">Eden Parts</h3></div></a></article>
+        </div>
+
+        <!-- Project 01: Jahiz -->
+        <article class="proj-featured js-reveal" aria-label="Project: Jahiz Cleaning Company">
+          <a href="https://jahiz0.netlify.app" target="_blank" rel="noopener noreferrer"
+             class="proj-featured-img-wrap" tabindex="-1" aria-hidden="true">
+            <div class="proj-img-inner">
+              <img src="project-jahiz.png" alt="Jahiz Cleaning Company website" loading="lazy" decoding="async">
+              <div class="proj-img-hover"><span data-i18n="view_live">View Live ↗</span></div>
+            </div>
+          </a>
+          <div class="proj-featured-info">
+            <div class="proj-meta">
+              <span class="mono proj-num" data-i18n="proj_num_01">01</span>
+              <span class="proj-cat" data-i18n="proj_cat_01">Cleaning Business</span>
+            </div>
+            <h3 class="proj-title" data-i18n="proj_title_01">Jahiz Cleaning Company</h3>
+            <p class="proj-desc" data-i18n="proj_desc_01">A professional cleaning company website built to convert visitors into leads. Clear service presentation, trust-building copy, and a fast mobile-first experience that makes it effortless for customers to reach out.</p>
+            <div class="proj-tech" aria-label="Technologies used">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <div class="proj-links">
+              <a href="https://jahiz0.netlify.app" target="_blank" rel="noopener noreferrer" class="btn-outline" data-i18n="live_site">Live Site ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 02: Merzouga (reversed) -->
+        <article class="proj-featured proj-featured--rev js-reveal" aria-label="Project: Merzouga Restaurant">
+          <a href="https://merzougarestaurant.com" target="_blank" rel="noopener noreferrer"
+             class="proj-featured-img-wrap" tabindex="-1" aria-hidden="true">
+            <div class="proj-img-inner">
+              <img src="project-merzouga.png" alt="Merzouga Restaurant website" loading="lazy" decoding="async">
+              <div class="proj-img-hover"><span data-i18n="view_live">View Live ↗</span></div>
+            </div>
+          </a>
+          <div class="proj-featured-info">
+            <div class="proj-meta">
+              <span class="mono proj-num" data-i18n="proj_num_02">02</span>
+              <span class="proj-cat" data-i18n="proj_cat_02">Hospitality</span>
+            </div>
+            <h3 class="proj-title" data-i18n="proj_title_02">Merzouga Restaurant</h3>
+            <p class="proj-desc" data-i18n="proj_desc_02">A clean, atmospheric restaurant website featuring an online menu and a visual identity that matches the warmth of the dining experience. Built to feel as inviting as the food itself.</p>
+            <div class="proj-tech" aria-label="Technologies used">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <div class="proj-links">
+              <a href="https://merzougarestaurant.com" target="_blank" rel="noopener noreferrer" class="btn-outline" data-i18n="live_site">Live Site ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 03: Eden -->
+        <article class="proj-featured js-reveal" aria-label="Project: Eden Boutique Hotel">
+          <a href="https://edenboutiquehotel.ma" target="_blank" rel="noopener noreferrer"
+             class="proj-featured-img-wrap" tabindex="-1" aria-hidden="true">
+            <div class="proj-img-inner">
+              <img src="project-eden.png" alt="Eden Boutique Hotel website" loading="lazy" decoding="async">
+              <div class="proj-img-hover"><span data-i18n="view_live">View Live ↗</span></div>
+            </div>
+          </a>
+          <div class="proj-featured-info">
+            <div class="proj-meta">
+              <span class="mono proj-num" data-i18n="proj_num_03">03</span>
+              <span class="proj-cat" data-i18n="proj_cat_03">Hotel & Hospitality</span>
+            </div>
+            <h3 class="proj-title" data-i18n="proj_title_03">Eden Boutique Hotel</h3>
+            <p class="proj-desc" data-i18n="proj_desc_03">A boutique hotel site that had to feel luxurious without being slow. Gallery, booking flow, and a visual identity that communicates the intimate, premium nature of the experience — without sacrificing performance.</p>
+            <div class="proj-tech" aria-label="Technologies used">
+              <span>WordPress</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <div class="proj-links">
+              <a href="https://edenboutiquehotel.ma" target="_blank" rel="noopener noreferrer" class="btn-outline" data-i18n="live_site">Live Site ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Mini cards grid -->
+        <div class="proj-grid js-reveal">
+
+          <article class="proj-card" aria-label="Project: Centre Nour">
+            <a href="https://centrenour.site" target="_blank" rel="noopener noreferrer" class="proj-card-link">
+              <div class="proj-card-top">
+                <div class="proj-card-num mono" data-i18n="proj_num_04">04</div>
+                <div class="proj-card-arrow">↗</div>
+              </div>
+              <div class="proj-card-body">
+                <span class="proj-cat" data-i18n="proj_cat_04">Wellness</span>
+                <h3 class="proj-card-title" data-i18n="proj_title_04">Centre Nour</h3>
+                <p data-i18n="proj_desc_04">Professional website for a wellness center, designed to build trust and present services with clarity.</p>
+              </div>
+              <div class="proj-card-foot">
+                <div class="proj-tech small"><span>WordPress</span><span>CSS</span></div>
+              </div>
+            </a>
+          </article>
+
+          <article class="proj-card" aria-label="Project: Business Center">
+            <a href="https://businesscenter20.netlify.app" target="_blank" rel="noopener noreferrer" class="proj-card-link">
+              <img class="proj-card-image" src="project-businesscenter.png" alt="Business Center website preview" loading="lazy" decoding="async">
+              <div class="proj-card-top">
+                <div class="proj-card-num mono" data-i18n="proj_num_05">05</div>
+                <div class="proj-card-arrow">↗</div>
+              </div>
+              <div class="proj-card-body">
+                <span class="proj-cat" data-i18n="proj_cat_05">Accounting</span>
+                <h3 class="proj-card-title" data-i18n="proj_title_05">Business Center</h3>
+                <p data-i18n="proj_desc_05">A professional site for an accounting firm, built to communicate authority and simplify client enquiries.</p>
+              </div>
+              <div class="proj-card-foot">
+                <div class="proj-tech small"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+              </div>
+            </a>
+          </article>
+
+          <article class="proj-card" aria-label="Project: AHR Collections">
+            <a href="https://ahrcollections.com" target="_blank" rel="noopener noreferrer" class="proj-card-link">
+              <img class="proj-card-image" src="project-ahr.png" alt="AHR Collections website preview" loading="lazy" decoding="async">
+              <div class="proj-card-top">
+                <div class="proj-card-num mono" data-i18n="proj_num_06">06</div>
+                <div class="proj-card-arrow">↗</div>
+              </div>
+              <div class="proj-card-body">
+                <span class="proj-cat" data-i18n="proj_cat_06">E-Commerce</span>
+                <h3 class="proj-card-title" data-i18n="proj_title_06">AHR Collections</h3>
+                <p data-i18n="proj_desc_06">An e-commerce presence built to showcase and sell products with a clean visual identity and smooth shopping experience.</p>
+              </div>
+              <div class="proj-card-foot">
+                <div class="proj-tech small"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+              </div>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════════ SKILLS ══════════════════════════════ -->
+    <section id="skills" class="section skills-section">
+      <div class="section-wrap">
+        <div class="section-label-row">
+          <span class="mono sec-num" data-i18n="sec_03">03</span>
+          <span class="sec-name" data-i18n="sec_03_name">Skills & Tools</span>
+        </div>
+
+        <div class="skills-layout">
+          <h2 class="sec-heading skills-heading reveal-up" data-i18n-html="skills_heading">
+            The tools<br>I work with.
+          </h2>
+
+          <div class="skills-groups reveal-up" style="--delay:.15s">
+            <div class="skill-group">
+              <h3 class="skill-group-title mono" data-i18n="skill_group1">Languages &amp; Frameworks</h3>
+              <div class="skill-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                <span>TypeScript</span><span>React</span><span>Tailwind CSS</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <h3 class="skill-group-title mono" data-i18n="skill_group2">Development Tools</h3>
+              <div class="skill-tags">
+                <span>Git</span><span>GitHub</span><span>VS Code</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════════ PROCESS ══════════════════════════════ -->
+    <section id="process" class="section process-section">
+      <div class="section-wrap">
+        <div class="section-label-row">
+          <span class="mono sec-num" data-i18n="sec_04">04</span>
+          <span class="sec-name" data-i18n="sec_04_name">My Process</span>
+        </div>
+        <h2 class="sec-heading process-heading reveal-up" data-i18n-html="process_heading">
+          How I approach<br>every project.
+        </h2>
+
+        <div class="process-steps">
+          <div class="process-step js-reveal">
+            <span class="mono step-num">01</span>
+            <div class="step-body">
+              <h3 data-i18n="step1_title">Understanding</h3>
+            <p data-i18n="step1_desc">First, I learn about your business, your customers, and what the site needs to do.</p>
+            </div>
+          </div>
+          <div class="process-step js-reveal">
+            <span class="mono step-num">02</span>
+            <div class="step-body">
+              <h3 data-i18n="step2_title">Planning</h3>
+              <p data-i18n="step2_desc">I plan the pages and agree on the visual direction before development starts.</p>
+            </div>
+          </div>
+          <div class="process-step js-reveal">
+            <span class="mono step-num">03</span>
+            <div class="step-body">
+              <h3 data-i18n="step3_title">Build</h3>
+              <p data-i18n="step3_desc">I build the site to work across screen sizes, with attention to speed and accessibility.</p>
+            </div>
+          </div>
+          <div class="process-step js-reveal">
+            <span class="mono step-num">04</span>
+            <div class="step-body">
+              <h3 data-i18n="step4_title">Refinement</h3>
+              <p data-i18n="step4_desc">We review the finished site, make any final adjustments, and prepare it to go live.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════════ CONTACT ══════════════════════════════ -->
+    <section id="contact" class="section contact-section">
+      <div class="section-wrap">
+        <div class="contact-top">
+          <div class="section-label-row">
+            <span class="mono sec-num" data-i18n="sec_05">05</span>
+            <span class="sec-name" data-i18n="sec_05_name">Contact</span>
+          </div>
+          <h2 class="contact-headline reveal-up" data-i18n-html="contact_headline">
+            Have an idea?<br>Let's make it<br><em>happen.</em>
+          </h2>
+
+          <div class="contact-channels reveal-up" style="--delay:.15s">
+            <a href="mailto:abdoforbusiness90@gmail.com" class="contact-ch">
+              <span class="mono ch-label" data-i18n="ch_email">Email</span>
+              <span class="ch-value">abdoforbusiness90@gmail.com</span>
+              <span class="ch-arrow">↗</span>
+            </a>
+            <a href="https://www.linkedin.com/in/abderrahim-rachidi-96b049362"
+               target="_blank" rel="noopener noreferrer" class="contact-ch">
+              <span class="mono ch-label" data-i18n="ch_linkedin">LinkedIn</span>
+              <span class="ch-value" data-i18n="ch_linkedin_val">Abderrahim Rachidi</span>
+              <span class="ch-arrow">↗</span>
+            </a>
+            <a href="https://wa.me/212702446125"
+               target="_blank" rel="noopener noreferrer" class="contact-ch">
+              <span class="mono ch-label" data-i18n="ch_whatsapp">WhatsApp</span>
+              <span class="ch-value">+212 702 446 125</span>
+              <span class="ch-arrow">↗</span>
+            </a>
+            <a href="https://github.com/ABRACHY"
+               target="_blank" rel="noopener noreferrer" class="contact-ch">
+              <span class="mono ch-label" data-i18n="ch_github">GitHub</span>
+              <span class="ch-value">ABRACHY</span>
+              <span class="ch-arrow">↗</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap reveal-up" style="--delay:.25s">
+          <p class="mono form-intro-label" data-i18n="form_intro">Or send a direct message</p>
+          <form id="whatsapp-contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contact-name" data-i18n="f_name">Name</label>
+                <input type="text" id="contact-name" name="name"
+                       placeholder="Your name" data-i18n-ph="f_name_ph"
+                       required autocomplete="name">
+              </div>
+              <div class="form-group">
+                <label for="contact-phone" data-i18n="f_phone">Phone / WhatsApp</label>
+                <input type="tel" id="contact-phone" name="phone"
+                       placeholder="+1 234 567 890" data-i18n-ph="f_phone_ph"
+                       required autocomplete="tel">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contact-email">
+                  <span data-i18n="f_email">Email</span>
+                  <span class="optional" data-i18n="f_email_opt">(optional)</span>
+                </label>
+                <input type="email" id="contact-email" name="email"
+                       placeholder="hello@you.com" data-i18n-ph="f_email_ph"
+                       autocomplete="email">
+              </div>
+              <div class="form-group">
+                <label for="contact-service" data-i18n="f_service">Project type</label>
+                <select id="contact-service" name="service" required>
+                  <option value="" data-i18n-opt="f_service_0">Select a type</option>
+                  <option value="Business website" data-i18n-opt="f_service_1">Business website</option>
+                  <option value="Landing page"     data-i18n-opt="f_service_2">Landing page</option>
+                  <option value="Website redesign" data-i18n-opt="f_service_3">Website redesign</option>
+                  <option value="E-Commerce"       data-i18n-opt="f_service_4">E-Commerce</option>
+                  <option value="Other"            data-i18n-opt="f_service_5">Other</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="contact-message" data-i18n="f_msg">Message</label>
+              <textarea id="contact-message" name="message" rows="4"
+                        placeholder="Tell me about your project..."
+                        data-i18n-ph="f_msg_ph" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary btn-submit" data-i18n="f_submit">
+              Send via WhatsApp ↗
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ════════════════════════════════ FOOTER ════════════════════════════════ -->
+  <footer>
+    <div class="footer-inner">
+      <span class="footer-brand">Abderrahim Rachidi</span>
+      <span class="mono footer-copy">
+        © <span id="footer-year">2026</span>
+        <span data-i18n="footer_copy">— Built with intention.</span>
+      </span>
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/abderrahim-rachidi-96b049362" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/ABRACHY" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
-
 </html>
