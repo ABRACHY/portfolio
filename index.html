@@ -1,43 +1,48 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en" dir="ltr">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Abderrahim Rachidi — Frontend Developer & Digital Experience Creator</title>
-  <meta name="description" content="Frontend Developer based in Morocco building clean, purposeful digital experiences.">
+  <title>Abderrahim Rachidi | Frontend Developer &amp; QA Tester</title>
+  <meta name="description" content="Portfolio of Abderrahim Rachidi, showcasing frontend development projects and software quality assurance skills.">
+  <meta property="og:title" content="Abderrahim Rachidi | Frontend Developer &amp; QA Tester">
+  <meta property="og:description" content="Frontend development projects and software quality assurance skills.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://abderrahimportfolio.netlify.app/">
+  <meta property="og:image" content="https://abderrahimportfolio.netlify.app/portfopic.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400&family=Inter:wght@400;500&family=Manrope:wght@800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Cairo:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- ═══════════════════ LANGUAGE SPLASH ═══════════════════ -->
+  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• LANGUAGE SPLASH â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
   <div id="lang-splash" role="dialog" aria-modal="true" aria-label="Language selection">
     <div class="splash-inner">
       <div class="splash-logo"><span>A</span><span class="accent-letter">R</span></div>
       <p class="splash-name">Abderrahim Rachidi</p>
-      <p class="splash-hint mono">Select · Choisir · اختر</p>
+      <p class="splash-hint mono">Select &#183; Choisir &#183; &#1575;&#1582;&#1578;&#1585;</p>
       <div class="splash-btns">
         <button class="splash-lang-btn" data-lang="en" aria-label="English">
           <span class="splang-code">EN</span>
           <span class="splang-name">English</span>
         </button>
-        <button class="splash-lang-btn" data-lang="fr" aria-label="Français">
+        <button class="splash-lang-btn" data-lang="fr" aria-label="Fran&#231;ais">
           <span class="splang-code">FR</span>
-          <span class="splang-name">Français</span>
+          <span class="splang-name">Fran&#231;ais</span>
         </button>
-        <button class="splash-lang-btn" data-lang="ar" aria-label="العربية">
-          <span class="splang-code ar-code">ع</span>
-          <span class="splang-name ar-name">العربية</span>
+        <button class="splash-lang-btn" data-lang="ar" aria-label="&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577">
+          <span class="splang-code ar-code">&#1593;</span>
+          <span class="splang-name ar-name">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</span>
         </button>
       </div>
     </div>
   </div>
 
-  <!-- ═══════════════════════════════ NAV ═══════════════════════════════ -->
+  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• NAV â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
   <header id="site-header">
     <div class="nav-inner">
       <a href="#" class="nav-logo" aria-label="Home">
@@ -45,9 +50,11 @@
       </a>
 
       <nav class="nav-links" role="navigation" aria-label="Main navigation">
-        <a href="#work"    class="nav-link" data-i18n="nav_work">Work</a>
-        <a href="#about"   class="nav-link" data-i18n="nav_about">About</a>
-        <a href="#skills"  class="nav-link" data-i18n="nav_skills">Skills</a>
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link" data-i18n="nav_about">About</a>
+        <a href="#work" class="nav-link">Development</a>
+        <a href="#qa-testing" class="nav-link">QA Testing</a>
+        <a href="#skills" class="nav-link" data-i18n="nav_skills">Skills</a>
         <a href="#contact" class="nav-link" data-i18n="nav_contact">Contact</a>
       </nav>
 
@@ -55,8 +62,8 @@
         <!-- Language switcher -->
         <div class="lang-switcher" aria-label="Language switcher" role="group">
           <button class="lang-sw-btn active" data-lang="en" aria-label="English">EN</button>
-          <button class="lang-sw-btn"        data-lang="fr" aria-label="Français">FR</button>
-          <button class="lang-sw-btn"        data-lang="ar" aria-label="العربية">ع</button>
+          <button class="lang-sw-btn"        data-lang="fr" aria-label="Fran&#231;ais">FR</button>
+          <button class="lang-sw-btn"        data-lang="ar" aria-label="&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577">&#1593;</button>
         </div>
 
         <a href="https://www.linkedin.com/in/abderrahim-rachidi-96b049362"
@@ -82,15 +89,17 @@
     <!-- Mobile menu -->
     <div class="mobile-menu" role="dialog" aria-label="Navigation menu" aria-hidden="true">
       <nav>
-        <a href="#work"    class="mobile-link" data-i18n="nav_work">Work</a>
-        <a href="#about"   class="mobile-link" data-i18n="nav_about">About</a>
-        <a href="#skills"  class="mobile-link" data-i18n="nav_skills">Skills</a>
+        <a href="#home" class="mobile-link">Home</a>
+        <a href="#about" class="mobile-link" data-i18n="nav_about">About</a>
+        <a href="#work" class="mobile-link">Development</a>
+        <a href="#qa-testing" class="mobile-link">QA Testing</a>
+        <a href="#skills" class="mobile-link" data-i18n="nav_skills">Skills</a>
         <a href="#contact" class="mobile-link" data-i18n="nav_contact">Contact</a>
       </nav>
       <div class="mobile-lang-row">
         <button class="lang-sw-btn active" data-lang="en" aria-label="English">EN</button>
-        <button class="lang-sw-btn"        data-lang="fr" aria-label="Français">FR</button>
-        <button class="lang-sw-btn"        data-lang="ar" aria-label="العربية">ع</button>
+        <button class="lang-sw-btn"        data-lang="fr" aria-label="Fran&#231;ais">FR</button>
+        <button class="lang-sw-btn"        data-lang="ar" aria-label="&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577">&#1593;</button>
       </div>
       <div class="mobile-socials">
         <a href="https://www.linkedin.com/in/abderrahim-rachidi-96b049362" target="_blank" rel="noopener noreferrer">LinkedIn</a>
@@ -103,49 +112,69 @@
 
   <main>
 
-    <!-- ══════════════════════════════ HERO ══════════════════════════════ -->
+    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• HERO â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
     <section class="hero" id="home" aria-labelledby="hero-headline">
+      <div class="hero-bg-grid" aria-hidden="true"></div>
 
       <div class="hero-container">
         <div class="hero-text">
+          <div class="hero-label reveal-up" aria-hidden="true">
+            <span class="avail-dot" aria-hidden="true"></span>
+            <span data-i18n="hero_avail">Available for new projects</span>
+          </div>
+
           <h1 class="hero-headline" id="hero-headline">
-            <span class="hl-line reveal-up" style="--delay:.05s" data-i18n="hero_h1">Websites made</span>
-            <span class="hl-line hl-accent reveal-up" style="--delay:.12s" data-i18n="hero_h2">with care.</span>
+            <span class="hl-line reveal-up" style="--delay:.05s" data-i18n="hero_h1">Frontend Developer</span>
+            <span class="hl-line hl-accent reveal-up" style="--delay:.12s" data-i18n="hero_h2">&amp; QA Tester</span>
           </h1>
 
-          <p class="hero-sub reveal-up" style="--delay:.38s" data-i18n="hero_sub">
-            I'm Abderrahim Rachidi — a self-taught frontend developer from Morocco.
-            I craft purposeful websites that help businesses connect with real people.
-          </p>
+          <p class="hero-sub reveal-up" style="--delay:.38s" data-i18n="hero_sub">I build web applications and test them to ensure functionality, usability, responsiveness, and reliability.</p>
 
           <div class="hero-ctas reveal-up" style="--delay:.48s">
-            <a href="#work"    class="btn-primary" data-i18n="hero_cta1">Explore My Work</a>
-            <a href="#contact" class="btn-ghost"   data-i18n="hero_cta2">Let's Talk</a>
+            <a href="#work" class="btn-primary">View Projects</a>
+            <a href="#contact" class="btn-ghost">Contact Me</a>
           </div>
 
           <div class="hero-socials reveal-up" style="--delay:.56s">
             <a href="https://www.linkedin.com/in/abderrahim-rachidi-96b049362" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <span class="dot-sep" aria-hidden="true">·</span>
+            <span class="dot-sep" aria-hidden="true">&#183;</span>
             <a href="https://github.com/ABRACHY" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <span class="dot-sep" aria-hidden="true">·</span>
+            <span class="dot-sep" aria-hidden="true">&#183;</span>
             <a href="mailto:abdoforbusiness90@gmail.com">Email</a>
           </div>
         </div>
 
         <div class="hero-visual reveal-scale" style="--delay:.1s" aria-hidden="true">
           <div class="hero-photo-frame">
-            <img src="portfopic.jpg" alt="Abderrahim Rachidi" class="hero-photo" fetchpriority="high" decoding="async">
+            <img src="portfopic.jpg" alt="Abderrahim Rachidi" class="hero-photo">
             <div class="hero-frame-deco"></div>
+          </div>
+          <div class="hero-badge hero-badge--1">
+            <span class="mono" data-i18n="hero_badge1">Frontend Dev</span>
+          </div>
+          <div class="hero-badge hero-badge--2">
+            <span class="mono" data-i18n="hero_badge2">Morocco ðŸ‡²ðŸ‡¦</span>
           </div>
         </div>
       </div>
 
+      <div class="hero-scroll" aria-hidden="true" hidden>
+        <span class="mono" data-i18n="scroll_hint">Scroll</span>
+        <div class="scroll-track"><div class="scroll-thumb"></div></div>
+      </div>
     </section>
 
-    <!-- ══════════════════════════ MARQUEE BAR ══════════════════════════ -->
+    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• MARQUEE BAR â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+    <div class="marquee-bar" aria-hidden="true">
+      <div class="marquee-track">
+        <div class="marquee-inner">
+          <span>HTML</span><em>&#8212;</em><span>CSS</span><em>&#8212;</em><span>JavaScript</span><em>&#8212;</em><span>TypeScript</span><em>&#8212;</em><span>React</span><em>&#8212;</em><span>Tailwind CSS</span><em>&#8212;</em><span>VS Code</span><em>&#8212;</em><span>Git</span><em>&#8212;</em><span>GitHub</span><em>&#8212;</em><span>Manual Testing</span><em>&#8212;</em><span>Functional Testing</span><em>&#8212;</em><span>UI Testing</span><em>&#8212;</em><span>Regression Testing</span><em>&#8212;</em><span>Exploratory Testing</span><em>&#8212;</em><span>Smoke Testing</span><em>&#8212;</em><span>Form Validation</span><em>&#8212;</em><span>Login & Registration Testing</span><em>&#8212;</em><span>Navigation Testing</span><em>&#8212;</em><span>Responsive Testing</span><em>&#8212;</em><span>Cross-browser Testing</span><em>&#8212;</em><span>Error Handling</span><em>&#8212;</em><span>Test Plans</span><em>&#8212;</em><span>Test Scenarios</span><em>&#8212;</em><span>Test Cases</span><em>&#8212;</em><span>Test Execution Reports</span><em>&#8212;</em><span>Bug Reports</span><em>&#8212;</em><span>Defect Documentation</span><em>&#8212;</em><span>Chrome DevTools</span><em>&#8212;</em><span>Jira</span><em>&#8212;</em><span>Browser Debugging</span><em>&#8212;</em><span>HTML</span><em>&#8212;</em><span>CSS</span><em>&#8212;</em><span>JavaScript</span><em>&#8212;</em><span>TypeScript</span><em>&#8212;</em><span>React</span><em>&#8212;</em><span>Tailwind CSS</span><em>&#8212;</em><span>VS Code</span><em>&#8212;</em><span>Git</span><em>&#8212;</em><span>GitHub</span><em>&#8212;</em><span>Manual Testing</span><em>&#8212;</em><span>Functional Testing</span><em>&#8212;</em><span>UI Testing</span><em>&#8212;</em><span>Regression Testing</span><em>&#8212;</em><span>Exploratory Testing</span><em>&#8212;</em><span>Smoke Testing</span><em>&#8212;</em><span>Form Validation</span><em>&#8212;</em><span>Login & Registration Testing</span><em>&#8212;</em><span>Navigation Testing</span><em>&#8212;</em><span>Responsive Testing</span><em>&#8212;</em><span>Cross-browser Testing</span><em>&#8212;</em><span>Error Handling</span><em>&#8212;</em><span>Test Plans</span><em>&#8212;</em><span>Test Scenarios</span><em>&#8212;</em><span>Test Cases</span><em>&#8212;</em><span>Test Execution Reports</span><em>&#8212;</em><span>Bug Reports</span><em>&#8212;</em><span>Defect Documentation</span><em>&#8212;</em><span>Chrome DevTools</span><em>&#8212;</em><span>Jira</span><em>&#8212;</em><span>Browser Debugging</span><em>&#8212;</em>
+        </div>
+      </div>
+    </div>
 
 
-    <!-- ══════════════════════════════ ABOUT ══════════════════════════════ -->
+    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• ABOUT â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
     <section id="about" class="section about-section">
       <div class="section-wrap">
         <div class="section-label-row">
@@ -156,22 +185,22 @@
         <div class="about-layout">
           <div class="about-left">
             <h2 class="sec-heading reveal-up" data-i18n-html="about_heading">
-              I design and build<br>websites for <em>people</em><br>and businesses.
+              I build things<br>people <em>actually</em><br>enjoy using.
             </h2>
           </div>
 
           <div class="about-right reveal-up" style="--delay:.15s">
             <p class="about-lead" data-i18n="about_lead">
-              I'm Abderrahim — a self-taught frontend developer and digital experience creator based in Morocco.
+              I'm Abderrahim &#8212; a self-taught frontend developer and digital experience creator based in Morocco.
             </p>
             <p data-i18n="about_p1">
               I got into web development because I was fascinated by the gap between what an idea looks like in someone's head and what actually ends up on screen. That gap is where I work.
             </p>
             <p data-i18n-html="about_p2">
-              I learned by doing: building pages, fixing problems, and slowly developing a sense for what makes a digital product feel <em>right</em> — not just functional, but intentional. Every project I take on is a chance to combine clean code with thoughtful design.
+              I learned by doing: building pages, fixing problems, and slowly developing a sense for what makes a digital product feel <em>right</em> &#8212; not just functional, but intentional. Every project I take on is a chance to combine clean code with thoughtful design.
             </p>
             <p data-i18n="about_p3">
-              I care about performance, accessibility, and the kind of details most people don't consciously notice — but definitely feel.
+              I care about performance, accessibility, and the kind of details most people don't consciously notice &#8212; but definitely feel.
             </p>
 
             <div class="about-values">
@@ -190,7 +219,7 @@
     </section>
 
 
-    <!-- ═══════════════════════════════ WORK ═══════════════════════════════ -->
+    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• WORK â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
     <section id="work" class="section work-section">
       <div class="section-wrap">
         <div class="work-header">
@@ -201,20 +230,13 @@
           <p class="work-desc" data-i18n="work_desc">A selection of digital experiences built for real businesses.</p>
         </div>
 
-        <div class="proj-grid proj-grid--featured js-reveal" aria-label="Recent projects">
-          <article class="proj-card"><a href="https://hvac.umareq.com/" target="_blank" rel="noopener noreferrer" class="proj-card-link"><img class="proj-card-image project-logo" src="logo-hvac-umareq.png" alt="HVAC UMAREQ logo" loading="lazy" decoding="async"><div class="proj-card-top"><span class="proj-card-num mono">01</span><span class="proj-card-arrow">↗</span></div><div class="proj-card-body"><span class="proj-cat">HVAC</span><h3 class="proj-card-title">hvac.umareq.com</h3></div></a></article>
-          <article class="proj-card proj-card--offset"><a href="https://climatisationmarocpro.com/" target="_blank" rel="noopener noreferrer" class="proj-card-link"><img class="proj-card-image project-logo" src="logo-climatisation-pro.png" alt="Climatisation Maroc Pro logo" loading="lazy" decoding="async"><div class="proj-card-top"><span class="proj-card-num mono">02</span><span class="proj-card-arrow">↗</span></div><div class="proj-card-body"><span class="proj-cat">HVAC</span><h3 class="proj-card-title">climatisationmarocpro.com</h3></div></a></article>
-          <article class="proj-card"><a href="https://climatisationmaroc.com/" target="_blank" rel="noopener noreferrer" class="proj-card-link"><img class="proj-card-image project-logo" src="logo-climatisation-maroc.png" alt="Climatisation Maroc logo" loading="lazy" decoding="async"><div class="proj-card-top"><span class="proj-card-num mono">03</span><span class="proj-card-arrow">↗</span></div><div class="proj-card-body"><span class="proj-cat">HVAC</span><h3 class="proj-card-title">climatisationmaroc.com</h3></div></a></article>
-          <article class="proj-card proj-card--offset"><a href="https://eden-parts.netlify.app/" target="_blank" rel="noopener noreferrer" class="proj-card-link"><img class="proj-card-image project-logo proj-card-image--contain" src="logo-eden-parts.png" alt="Eden Parts logo" loading="lazy" decoding="async"><div class="proj-card-top"><span class="proj-card-num mono">04</span><span class="proj-card-arrow">↗</span></div><div class="proj-card-body"><span class="proj-cat">Auto parts</span><h3 class="proj-card-title">Eden Parts</h3></div></a></article>
-        </div>
-
         <!-- Project 01: Jahiz -->
         <article class="proj-featured js-reveal" aria-label="Project: Jahiz Cleaning Company">
           <a href="https://jahiz0.netlify.app" target="_blank" rel="noopener noreferrer"
              class="proj-featured-img-wrap" tabindex="-1" aria-hidden="true">
-            <div class="proj-img-inner project-logo-frame">
-              <img class="project-logo project-logo--jahiz" src="logo-jahiz.png" alt="Jahiz Cleaning Service logo" loading="lazy" decoding="async">
-              <div class="proj-img-hover"><span data-i18n="view_live">View Live ↗</span></div>
+            <div class="proj-img-inner">
+              <img src="project-jahiz.png" alt="Jahiz Cleaning Company website" loading="lazy">
+              <div class="proj-img-hover"><span data-i18n="view_live">View Live &#8599;</span></div>
             </div>
           </a>
           <div class="proj-featured-info">
@@ -228,7 +250,7 @@
               <span>HTML</span><span>CSS</span><span>JavaScript</span>
             </div>
             <div class="proj-links">
-              <a href="https://jahiz0.netlify.app" target="_blank" rel="noopener noreferrer" class="btn-outline" data-i18n="live_site">Live Site ↗</a>
+              <a href="https://jahiz0.netlify.app" target="_blank" rel="noopener noreferrer" class="btn-outline" data-i18n="live_site">Live Site &#8599;</a>
             </div>
           </div>
         </article>
@@ -237,9 +259,9 @@
         <article class="proj-featured proj-featured--rev js-reveal" aria-label="Project: Merzouga Restaurant">
           <a href="https://merzougarestaurant.com" target="_blank" rel="noopener noreferrer"
              class="proj-featured-img-wrap" tabindex="-1" aria-hidden="true">
-            <div class="proj-img-inner project-logo-frame">
-              <img class="project-logo project-logo--merzouga" src="logo-merzouga.png" alt="Merzouga Restaurant logo" loading="lazy" decoding="async">
-              <div class="proj-img-hover"><span data-i18n="view_live">View Live ↗</span></div>
+            <div class="proj-img-inner">
+              <img src="project-merzouga.png" alt="Merzouga Restaurant website" loading="lazy">
+              <div class="proj-img-hover"><span data-i18n="view_live">View Live &#8599;</span></div>
             </div>
           </a>
           <div class="proj-featured-info">
@@ -253,7 +275,7 @@
               <span>HTML</span><span>CSS</span><span>JavaScript</span>
             </div>
             <div class="proj-links">
-              <a href="https://merzougarestaurant.com" target="_blank" rel="noopener noreferrer" class="btn-outline" data-i18n="live_site">Live Site ↗</a>
+              <a href="https://merzougarestaurant.com" target="_blank" rel="noopener noreferrer" class="btn-outline" data-i18n="live_site">Live Site &#8599;</a>
             </div>
           </div>
         </article>
@@ -262,9 +284,9 @@
         <article class="proj-featured js-reveal" aria-label="Project: Eden Boutique Hotel">
           <a href="https://edenboutiquehotel.ma" target="_blank" rel="noopener noreferrer"
              class="proj-featured-img-wrap" tabindex="-1" aria-hidden="true">
-            <div class="proj-img-inner project-logo-frame">
-              <img class="project-logo project-logo--eden" src="logo-eden-hotel.jpg" alt="L Eden Boutique Hotel logo" loading="lazy" decoding="async">
-              <div class="proj-img-hover"><span data-i18n="view_live">View Live ↗</span></div>
+            <div class="proj-img-inner">
+              <img src="project-eden.png" alt="Eden Boutique Hotel website" loading="lazy">
+              <div class="proj-img-hover"><span data-i18n="view_live">View Live &#8599;</span></div>
             </div>
           </a>
           <div class="proj-featured-info">
@@ -273,12 +295,12 @@
               <span class="proj-cat" data-i18n="proj_cat_03">Hotel & Hospitality</span>
             </div>
             <h3 class="proj-title" data-i18n="proj_title_03">Eden Boutique Hotel</h3>
-            <p class="proj-desc" data-i18n="proj_desc_03">A boutique hotel site that had to feel luxurious without being slow. Gallery, booking flow, and a visual identity that communicates the intimate, premium nature of the experience — without sacrificing performance.</p>
+            <p class="proj-desc" data-i18n="proj_desc_03">A boutique hotel site that had to feel luxurious without being slow. Gallery, booking flow, and a visual identity that communicates the intimate, premium nature of the experience &#8212; without sacrificing performance.</p>
             <div class="proj-tech" aria-label="Technologies used">
               <span>WordPress</span><span>CSS</span><span>JavaScript</span>
             </div>
             <div class="proj-links">
-              <a href="https://edenboutiquehotel.ma" target="_blank" rel="noopener noreferrer" class="btn-outline" data-i18n="live_site">Live Site ↗</a>
+              <a href="https://edenboutiquehotel.ma" target="_blank" rel="noopener noreferrer" class="btn-outline" data-i18n="live_site">Live Site &#8599;</a>
             </div>
           </div>
         </article>
@@ -290,7 +312,7 @@
             <a href="https://centrenour.site" target="_blank" rel="noopener noreferrer" class="proj-card-link">
               <div class="proj-card-top">
                 <div class="proj-card-num mono" data-i18n="proj_num_04">04</div>
-                <div class="proj-card-arrow">↗</div>
+                <div class="proj-card-arrow">&#8599;</div>
               </div>
               <div class="proj-card-body">
                 <span class="proj-cat" data-i18n="proj_cat_04">Wellness</span>
@@ -305,10 +327,10 @@
 
           <article class="proj-card" aria-label="Project: Business Center">
             <a href="https://businesscenter20.netlify.app" target="_blank" rel="noopener noreferrer" class="proj-card-link">
-              <img class="proj-card-image project-logo" src="logo-business-center.png" alt="Business Center 2.0 logo" loading="lazy" decoding="async">
+              <img class="proj-card-image" src="project-businesscenter-live.jpg" alt="Business Center homepage screenshot" loading="lazy" decoding="async">
               <div class="proj-card-top">
                 <div class="proj-card-num mono" data-i18n="proj_num_05">05</div>
-                <div class="proj-card-arrow">↗</div>
+                <div class="proj-card-arrow">&#8599;</div>
               </div>
               <div class="proj-card-body">
                 <span class="proj-cat" data-i18n="proj_cat_05">Accounting</span>
@@ -323,10 +345,10 @@
 
           <article class="proj-card" aria-label="Project: AHR Collections">
             <a href="https://ahrcollections.com" target="_blank" rel="noopener noreferrer" class="proj-card-link">
-              <img class="proj-card-image project-logo" src="logo-ahr.svg" alt="AHR Collections logo" loading="lazy" decoding="async">
+              <img class="proj-card-image" src="project-ahr-collections.jpg" alt="AHR Collections homepage screenshot" loading="lazy" decoding="async">
               <div class="proj-card-top">
                 <div class="proj-card-num mono" data-i18n="proj_num_06">06</div>
-                <div class="proj-card-arrow">↗</div>
+                <div class="proj-card-arrow">&#8599;</div>
               </div>
               <div class="proj-card-body">
                 <span class="proj-cat" data-i18n="proj_cat_06">E-Commerce</span>
@@ -339,12 +361,63 @@
             </a>
           </article>
 
+          <article class="proj-card" aria-label="Project: HVAC UMAREQ">
+            <a href="https://hvac.umareq.com/" target="_blank" rel="noopener noreferrer" class="proj-card-link">
+              <img class="proj-card-image" src="project-hvac-umareq.jpg" alt="HVAC UMAREQ homepage screenshot" loading="lazy" decoding="async">
+              <div class="proj-card-top"><span class="proj-card-num mono">07</span><span class="proj-card-arrow">&#8599;</span></div>
+              <div class="proj-card-body"><span class="proj-cat">HVAC</span><h3 class="proj-card-title">HVAC UMAREQ</h3></div>
+            </a>
+          </article>
+          <article class="proj-card" aria-label="Project: Climatisation Maroc Pro">
+            <a href="https://climatisationmarocpro.com/" target="_blank" rel="noopener noreferrer" class="proj-card-link">
+              <img class="proj-card-image" src="project-climatisation-maroc-pro.jpg" alt="Climatisation Maroc Pro homepage screenshot" loading="lazy" decoding="async">
+              <div class="proj-card-top"><span class="proj-card-num mono">08</span><span class="proj-card-arrow">&#8599;</span></div>
+              <div class="proj-card-body"><span class="proj-cat">HVAC</span><h3 class="proj-card-title">Climatisation Maroc Pro</h3></div>
+            </a>
+          </article>
+          <article class="proj-card" aria-label="Project: Climatisation Maroc">
+            <a href="https://climatisationmaroc.com/" target="_blank" rel="noopener noreferrer" class="proj-card-link">
+              <img class="proj-card-image" src="project-climatisation-maroc.jpg" alt="Climatisation Maroc homepage screenshot" loading="lazy" decoding="async">
+              <div class="proj-card-top"><span class="proj-card-num mono">09</span><span class="proj-card-arrow">&#8599;</span></div>
+              <div class="proj-card-body"><span class="proj-cat">HVAC</span><h3 class="proj-card-title">Climatisation Maroc</h3></div>
+            </a>
+          </article>
+          <article class="proj-card" aria-label="Project: Eden Parts">
+            <a href="https://eden-parts.netlify.app/" target="_blank" rel="noopener noreferrer" class="proj-card-link">
+              <img class="proj-card-image" src="project-eden-parts.jpg" alt="Eden Parts homepage screenshot" loading="lazy" decoding="async">
+              <div class="proj-card-top"><span class="proj-card-num mono">10</span><span class="proj-card-arrow">&#8599;</span></div>
+              <div class="proj-card-body"><span class="proj-cat">Auto Parts</span><h3 class="proj-card-title">Eden Parts</h3></div>
+            </a>
+          </article>
         </div>
       </div>
     </section>
 
 
-    <!-- ══════════════════════════════ SKILLS ══════════════════════════════ -->
+    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• SKILLS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+
+    <section id="qa-testing" class="section qa-section" aria-labelledby="qa-heading">
+      <div class="section-wrap">
+        <div class="section-label-row"><span class="mono sec-num">04</span><span class="sec-name">Software Quality Assurance</span></div>
+        <h2 class="sec-heading reveal-up" id="qa-heading">Quality Assurance &amp; Software Testing</h2>
+        <p class="qa-intro">I am building my career in software quality assurance, applying a careful, user-focused approach to web application testing.</p>
+        <div class="qa-competency-grid">
+          <article class="qa-panel"><h3>Manual Testing</h3><ul><li>Functional testing</li><li>UI testing</li><li>Regression testing</li><li>Exploratory testing</li><li>Smoke testing</li></ul></article>
+          <article class="qa-panel"><h3>Web Application Testing</h3><ul><li>Form validation</li><li>Login and registration flows</li><li>Navigation and interactions</li><li>Responsive testing</li><li>Cross-browser compatibility</li><li>Error handling</li></ul></article>
+          <article class="qa-panel"><h3>Test Documentation</h3><ul><li>Test plans and scenarios</li><li>Test cases</li><li>Test execution reports</li><li>Bug reports</li><li>Defect documentation</li></ul></article>
+          <article class="qa-panel qa-tools"><h3>QA Tools &amp; Technologies</h3><ul><li><strong>Chrome DevTools</strong><span>Browser inspection and debugging</span></li><li><strong>Jira</strong><span>Bug tracking and issue management</span></li><li><strong>Git</strong><span>Version control</span></li><li><strong>GitHub</strong><span>Repository management</span></li></ul></article>
+        </div>
+        <div class="qa-projects"><div class="qa-project-heading"><h3>QA Testing Projects</h3><p>Practice project templates; testing and results are not yet completed.</p></div>
+          <div class="qa-project-grid">
+            <article class="qa-project-card"><span class="mono qa-status">Practice Project - Planned</span><h4>01 / E-commerce Website Testing</h4><p>Manual testing of essential shopping flows and functional behavior.</p><details><summary>Suggested test scenarios</summary><p>Registration, login/logout, product search and details, cart add/remove, quantity updates, form validation, and checkout flow.</p></details><p class="qa-project-meta"><strong>Example application:</strong> <a href="https://climatisationmarocpro.com/" target="_blank" rel="noopener noreferrer">Climatisation Maroc Pro</a> (not tested yet)<br><strong>Objectives, cases, actual results, bugs, screenshots and report:</strong> To be completed</p></article>
+            <article class="qa-project-card"><span class="mono qa-status">Practice Project - Planned</span><h4>02 / Web Application Functional Testing</h4><p>Practice testing application functionality, user interactions, and form behavior.</p><details><summary>Suggested test scenarios</summary><p>Navigation, buttons and interactive elements, input validation, required fields, invalid input, success and error messages, and browser compatibility.</p></details><p class="qa-project-meta"><strong>Example application:</strong> <a href="https://jahiz0.netlify.app/" target="_blank" rel="noopener noreferrer">Jahiz Cleaning Company</a> (not tested yet)<br><strong>Objectives, cases, actual results, bugs, screenshots and report:</strong> To be completed</p></article>
+            <article class="qa-project-card"><span class="mono qa-status">Practice Project - Planned</span><h4>03 / Responsive &amp; Cross-Browser Testing</h4><p>Practice evaluating layouts and functionality across screen sizes and browsers.</p><details><summary>Suggested test scenarios</summary><p>Desktop, tablet, and mobile layouts; navigation; responsive images; text overflow; horizontal scrolling; and layout consistency.</p></details><p class="qa-project-meta"><strong>Example application:</strong> <a href="https://merzougarestaurant.com/" target="_blank" rel="noopener noreferrer">Merzouga Restaurant</a> (not tested yet)<br><strong>Objectives, cases, actual results, bugs, screenshots and report:</strong> To be completed</p></article>
+          </div>
+        </div>
+        <article class="qa-bug-example"><div><span class="mono qa-status">Illustrative example - Not from a real application</span><h3>Sample bug report structure</h3></div><dl><div><dt>Bug ID</dt><dd>EXAMPLE-001</dd></div><div><dt>Bug Title</dt><dd>Illustrative: Submit button remains disabled</dd></div><div><dt>Environment</dt><dd>Example browser / OS / build; replace with actual details</dd></div><div><dt>Steps to Reproduce</dt><dd>1. Open the example form<br>2. Enter valid sample data<br>3. Select Submit</dd></div><div><dt>Expected Result</dt><dd>The form submits and confirms success.</dd></div><div><dt>Actual Result</dt><dd>Example only: the button remains disabled.</dd></div><div><dt>Severity</dt><dd>Example: Medium</dd></div><div><dt>Priority</dt><dd>Example: P2</dd></div><div><dt>Status</dt><dd>Illustrative; not a filed defect</dd></div></dl></article>
+      </div>
+    </section>
+
     <section id="skills" class="section skills-section">
       <div class="section-wrap">
         <div class="section-label-row">
@@ -359,17 +432,15 @@
 
           <div class="skills-groups reveal-up" style="--delay:.15s">
             <div class="skill-group">
-              <h3 class="skill-group-title mono" data-i18n="skill_group1">Languages &amp; Frameworks</h3>
+              <h3 class="skill-group-title mono" data-i18n="skill_group1">Frontend Development</h3>
               <div class="skill-tags">
                 <span>HTML</span><span>CSS</span><span>JavaScript</span>
-                <span>TypeScript</span><span>React</span><span>Tailwind CSS</span>
+                <span>TypeScript</span><span>React</span><span>Tailwind CSS</span><span>VS Code</span>
               </div>
             </div>
             <div class="skill-group">
-              <h3 class="skill-group-title mono" data-i18n="skill_group2">Development Tools</h3>
-              <div class="skill-tags">
-                <span>Git</span><span>GitHub</span><span>VS Code</span>
-              </div>
+              <h3 class="skill-group-title mono">Software Quality Assurance</h3>
+              <div class="skill-tags"><span>Manual testing</span><span>Functional testing</span><span>UI testing</span><span>Regression testing</span><span>Responsive testing</span><span>Test case design</span><span>Bug reporting</span><span>Browser debugging</span></div>
             </div>
           </div>
         </div>
@@ -377,7 +448,7 @@
     </section>
 
 
-    <!-- ══════════════════════════════ PROCESS ══════════════════════════════ -->
+    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• PROCESS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
     <section id="process" class="section process-section">
       <div class="section-wrap">
         <div class="section-label-row">
@@ -393,28 +464,28 @@
             <span class="mono step-num">01</span>
             <div class="step-body">
               <h3 data-i18n="step1_title">Understanding</h3>
-            <p data-i18n="step1_desc">First, I learn about your business, your customers, and what the site needs to do.</p>
+              <p data-i18n="step1_desc">Before writing a single line, I listen. What is the business trying to achieve? Who are the users? What problem does this solve? The answers shape everything that follows.</p>
             </div>
           </div>
           <div class="process-step js-reveal">
             <span class="mono step-num">02</span>
             <div class="step-body">
               <h3 data-i18n="step2_title">Planning</h3>
-              <p data-i18n="step2_desc">I plan the pages and agree on the visual direction before development starts.</p>
+              <p data-i18n="step2_desc">I define the structure, map the user journey, and think through the technical direction. Good planning means fewer surprises and a final product that actually makes sense.</p>
             </div>
           </div>
           <div class="process-step js-reveal">
             <span class="mono step-num">03</span>
             <div class="step-body">
               <h3 data-i18n="step3_title">Build</h3>
-              <p data-i18n="step3_desc">I build the site to work across screen sizes, with attention to speed and accessibility.</p>
+              <p data-i18n="step3_desc">Clean, responsive, and functional. I build with performance and accessibility in mind &#8212; because a beautiful site that's slow or broken isn't serving anyone.</p>
             </div>
           </div>
           <div class="process-step js-reveal">
             <span class="mono step-num">04</span>
             <div class="step-body">
               <h3 data-i18n="step4_title">Refinement</h3>
-              <p data-i18n="step4_desc">We review the finished site, make any final adjustments, and prepare it to go live.</p>
+              <p data-i18n="step4_desc">I test across devices, fine-tune the details, and optimize until it feels right. The difference between good and great lives in this stage.</p>
             </div>
           </div>
         </div>
@@ -422,7 +493,7 @@
     </section>
 
 
-    <!-- ══════════════════════════════ CONTACT ══════════════════════════════ -->
+    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• CONTACT â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
     <section id="contact" class="section contact-section">
       <div class="section-wrap">
         <div class="contact-top">
@@ -438,25 +509,25 @@
             <a href="mailto:abdoforbusiness90@gmail.com" class="contact-ch">
               <span class="mono ch-label" data-i18n="ch_email">Email</span>
               <span class="ch-value">abdoforbusiness90@gmail.com</span>
-              <span class="ch-arrow">↗</span>
+              <span class="ch-arrow">&#8599;</span>
             </a>
             <a href="https://www.linkedin.com/in/abderrahim-rachidi-96b049362"
                target="_blank" rel="noopener noreferrer" class="contact-ch">
               <span class="mono ch-label" data-i18n="ch_linkedin">LinkedIn</span>
               <span class="ch-value" data-i18n="ch_linkedin_val">Abderrahim Rachidi</span>
-              <span class="ch-arrow">↗</span>
+              <span class="ch-arrow">&#8599;</span>
             </a>
             <a href="https://wa.me/212702446125"
                target="_blank" rel="noopener noreferrer" class="contact-ch">
               <span class="mono ch-label" data-i18n="ch_whatsapp">WhatsApp</span>
               <span class="ch-value">+212 702 446 125</span>
-              <span class="ch-arrow">↗</span>
+              <span class="ch-arrow">&#8599;</span>
             </a>
             <a href="https://github.com/ABRACHY"
                target="_blank" rel="noopener noreferrer" class="contact-ch">
               <span class="mono ch-label" data-i18n="ch_github">GitHub</span>
               <span class="ch-value">ABRACHY</span>
-              <span class="ch-arrow">↗</span>
+              <span class="ch-arrow">&#8599;</span>
             </a>
           </div>
         </div>
@@ -507,7 +578,7 @@
                         data-i18n-ph="f_msg_ph" required></textarea>
             </div>
             <button type="submit" class="btn-primary btn-submit" data-i18n="f_submit">
-              Send via WhatsApp ↗
+              Send via WhatsApp &#8599;
             </button>
           </form>
         </div>
@@ -516,13 +587,13 @@
 
   </main>
 
-  <!-- ════════════════════════════════ FOOTER ════════════════════════════════ -->
+  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• FOOTER â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
   <footer>
     <div class="footer-inner">
       <span class="footer-brand">Abderrahim Rachidi</span>
       <span class="mono footer-copy">
-        © <span id="footer-year">2026</span>
-        <span data-i18n="footer_copy">— Built with intention.</span>
+        &copy; <span id="footer-year">2026</span>
+        <span data-i18n="footer_copy">&#8212; Built with intention.</span>
       </span>
       <div class="footer-socials">
         <a href="https://www.linkedin.com/in/abderrahim-rachidi-96b049362" target="_blank" rel="noopener noreferrer">LinkedIn</a>
