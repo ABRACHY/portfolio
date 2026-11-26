@@ -51,7 +51,7 @@
 
       <nav class="nav-links" role="navigation" aria-label="Main navigation">
         <a href="#home" class="nav-link">Home</a>
-        <a href="#about" class="nav-link" data-i18n="nav_about">About</a>
+        <a href="about.html" class="nav-link" data-i18n="nav_about">About</a>
         <a href="#work" class="nav-link">Development</a>
         <a href="#qa-testing" class="nav-link">QA Testing</a>
         <a href="#skills" class="nav-link" data-i18n="nav_skills">Skills</a>
@@ -90,7 +90,7 @@
     <div class="mobile-menu" role="dialog" aria-label="Navigation menu" aria-hidden="true">
       <nav>
         <a href="#home" class="mobile-link">Home</a>
-        <a href="#about" class="mobile-link" data-i18n="nav_about">About</a>
+        <a href="about.html" class="mobile-link" data-i18n="nav_about">About</a>
         <a href="#work" class="mobile-link">Development</a>
         <a href="#qa-testing" class="mobile-link">QA Testing</a>
         <a href="#skills" class="mobile-link" data-i18n="nav_skills">Skills</a>
@@ -174,49 +174,7 @@
     </div>
 
 
-    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• ABOUT â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
-    <section id="about" class="section about-section">
-      <div class="section-wrap">
-        <div class="section-label-row">
-          <span class="mono sec-num" data-i18n="sec_01">01</span>
-          <span class="sec-name" data-i18n="sec_01_name">About</span>
-        </div>
 
-        <div class="about-layout">
-          <div class="about-left">
-            <h2 class="sec-heading reveal-up" data-i18n-html="about_heading">
-              I build things<br>people <em>actually</em><br>enjoy using.
-            </h2>
-          </div>
-
-          <div class="about-right reveal-up" style="--delay:.15s">
-            <p class="about-lead" data-i18n="about_lead">
-              I'm Abderrahim &#8212; a self-taught frontend developer and digital experience creator based in Morocco.
-            </p>
-            <p data-i18n="about_p1">
-              I got into web development because I was fascinated by the gap between what an idea looks like in someone's head and what actually ends up on screen. That gap is where I work.
-            </p>
-            <p data-i18n-html="about_p2">
-              I learned by doing: building pages, fixing problems, and slowly developing a sense for what makes a digital product feel <em>right</em> &#8212; not just functional, but intentional. Every project I take on is a chance to combine clean code with thoughtful design.
-            </p>
-            <p data-i18n="about_p3">
-              I care about performance, accessibility, and the kind of details most people don't consciously notice &#8212; but definitely feel.
-            </p>
-
-            <div class="about-values">
-              <div class="value-item">
-                <span class="mono value-label" data-i18n="val1_label">Philosophy</span>
-                <span class="value-text" data-i18n="val1_text">Build with intention. Ship with clarity.</span>
-              </div>
-              <div class="value-item">
-                <span class="mono value-label" data-i18n="val2_label">Approach</span>
-                <span class="value-text" data-i18n="val2_text">Design-first, code-informed, user-centered.</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
 
     <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• WORK â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
@@ -230,18 +188,56 @@
           <p class="work-desc" data-i18n="work_desc">A selection of digital experiences built for real businesses.</p>
         </div>
 
-        <!-- Project 01: Jahiz -->
+        <!-- Project 01: Eden Parts -->
+        <div class="proj-grid js-reveal">
+          <article class="proj-card" aria-label="Project: Eden Parts">
+            <a href="https://eden-parts.netlify.app/" target="_blank" rel="noopener noreferrer" class="proj-card-link">
+              <img class="proj-card-image project-logo" src="logo-eden-parts.png" alt="Eden Parts logo" loading="lazy" decoding="async">
+              <div class="proj-card-top"><span class="proj-card-num mono">01</span><span class="proj-card-arrow">&#8599;</span></div>
+              <div class="proj-card-body"><span class="proj-cat">Auto Parts</span><h3 class="proj-card-title">Eden Parts</h3></div>
+            </a>
+          </article>
+        </div>
+
+        <!-- Climate projects -->
+        <div class="proj-grid js-reveal">
+          <article class="proj-card" aria-label="Project: HVAC UMAREQ">
+            <a href="https://hvac.umareq.com/" target="_blank" rel="noopener noreferrer" class="proj-card-link">
+              <img class="proj-card-image project-logo" src="logo-hvac-umareq.png" alt="HVAC UMAREQ logo" loading="lazy" decoding="async">
+              <div class="proj-card-top"><span class="proj-card-num mono">02</span><span class="proj-card-arrow">&#8599;</span></div>
+              <div class="proj-card-body"><span class="proj-cat">HVAC</span><h3 class="proj-card-title">HVAC UMAREQ</h3></div>
+            </a>
+          </article>
+
+          <article class="proj-card" aria-label="Project: Climatisation Maroc Pro">
+            <a href="https://climatisationmarocpro.com/" target="_blank" rel="noopener noreferrer" class="proj-card-link">
+              <img class="proj-card-image project-logo" src="logo-climatisation-pro.png" alt="Climatisation Maroc Pro logo" loading="lazy" decoding="async">
+              <div class="proj-card-top"><span class="proj-card-num mono">03</span><span class="proj-card-arrow">&#8599;</span></div>
+              <div class="proj-card-body"><span class="proj-cat">HVAC</span><h3 class="proj-card-title">Climatisation Maroc Pro</h3></div>
+            </a>
+          </article>
+
+          <article class="proj-card" aria-label="Project: Climatisation Maroc">
+            <a href="https://climatisationmaroc.com/" target="_blank" rel="noopener noreferrer" class="proj-card-link">
+              <img class="proj-card-image project-logo" src="logo-climatisation-maroc.png" alt="Climatisation Maroc logo" loading="lazy" decoding="async">
+              <div class="proj-card-top"><span class="proj-card-num mono">04</span><span class="proj-card-arrow">&#8599;</span></div>
+              <div class="proj-card-body"><span class="proj-cat">HVAC</span><h3 class="proj-card-title">Climatisation Maroc</h3></div>
+            </a>
+          </article>
+        </div>
+
+        <!-- Jahiz Cleaning Company -->
         <article class="proj-featured js-reveal" aria-label="Project: Jahiz Cleaning Company">
           <a href="https://jahiz0.netlify.app" target="_blank" rel="noopener noreferrer"
              class="proj-featured-img-wrap" tabindex="-1" aria-hidden="true">
             <div class="proj-img-inner">
-              <img src="project-jahiz.png" alt="Jahiz Cleaning Company website" loading="lazy">
+              <img class="project-logo" src="logo-jahiz.png" alt="Jahiz Cleaning Company logo" loading="lazy">
               <div class="proj-img-hover"><span data-i18n="view_live">View Live &#8599;</span></div>
             </div>
           </a>
           <div class="proj-featured-info">
             <div class="proj-meta">
-              <span class="mono proj-num" data-i18n="proj_num_01">01</span>
+              <span class="mono proj-num" data-i18n="proj_num_05">05</span>
               <span class="proj-cat" data-i18n="proj_cat_01">Cleaning Business</span>
             </div>
             <h3 class="proj-title" data-i18n="proj_title_01">Jahiz Cleaning Company</h3>
@@ -255,43 +251,18 @@
           </div>
         </article>
 
-        <!-- Project 02: Merzouga (reversed) -->
-        <article class="proj-featured proj-featured--rev js-reveal" aria-label="Project: Merzouga Restaurant">
-          <a href="https://merzougarestaurant.com" target="_blank" rel="noopener noreferrer"
-             class="proj-featured-img-wrap" tabindex="-1" aria-hidden="true">
-            <div class="proj-img-inner">
-              <img src="project-merzouga.png" alt="Merzouga Restaurant website" loading="lazy">
-              <div class="proj-img-hover"><span data-i18n="view_live">View Live &#8599;</span></div>
-            </div>
-          </a>
-          <div class="proj-featured-info">
-            <div class="proj-meta">
-              <span class="mono proj-num" data-i18n="proj_num_02">02</span>
-              <span class="proj-cat" data-i18n="proj_cat_02">Hospitality</span>
-            </div>
-            <h3 class="proj-title" data-i18n="proj_title_02">Merzouga Restaurant</h3>
-            <p class="proj-desc" data-i18n="proj_desc_02">A clean, atmospheric restaurant website featuring an online menu and a visual identity that matches the warmth of the dining experience. Built to feel as inviting as the food itself.</p>
-            <div class="proj-tech" aria-label="Technologies used">
-              <span>HTML</span><span>CSS</span><span>JavaScript</span>
-            </div>
-            <div class="proj-links">
-              <a href="https://merzougarestaurant.com" target="_blank" rel="noopener noreferrer" class="btn-outline" data-i18n="live_site">Live Site &#8599;</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Project 03: Eden -->
+        <!-- Other projects -->
         <article class="proj-featured js-reveal" aria-label="Project: Eden Boutique Hotel">
           <a href="https://edenboutiquehotel.ma" target="_blank" rel="noopener noreferrer"
              class="proj-featured-img-wrap" tabindex="-1" aria-hidden="true">
             <div class="proj-img-inner">
-              <img src="project-eden.png" alt="Eden Boutique Hotel website" loading="lazy">
+              <img class="project-logo" src="logo-eden-hotel.jpg" alt="Eden Boutique Hotel logo" loading="lazy">
               <div class="proj-img-hover"><span data-i18n="view_live">View Live &#8599;</span></div>
             </div>
           </a>
           <div class="proj-featured-info">
             <div class="proj-meta">
-              <span class="mono proj-num" data-i18n="proj_num_03">03</span>
+              <span class="mono proj-num" data-i18n="proj_num_06">06</span>
               <span class="proj-cat" data-i18n="proj_cat_03">Hotel & Hospitality</span>
             </div>
             <h3 class="proj-title" data-i18n="proj_title_03">Eden Boutique Hotel</h3>
@@ -305,31 +276,36 @@
           </div>
         </article>
 
-        <!-- Mini cards grid -->
+        <article class="proj-featured proj-featured--rev js-reveal" aria-label="Project: Merzouga Restaurant">
+          <a href="https://merzougarestaurant.com" target="_blank" rel="noopener noreferrer"
+             class="proj-featured-img-wrap" tabindex="-1" aria-hidden="true">
+            <div class="proj-img-inner">
+              <img class="project-logo" src="logo-merzouga.png" alt="Merzouga Restaurant logo" loading="lazy">
+              <div class="proj-img-hover"><span data-i18n="view_live">View Live &#8599;</span></div>
+            </div>
+          </a>
+          <div class="proj-featured-info">
+            <div class="proj-meta">
+              <span class="mono proj-num" data-i18n="proj_num_07">07</span>
+              <span class="proj-cat" data-i18n="proj_cat_02">Hospitality</span>
+            </div>
+            <h3 class="proj-title" data-i18n="proj_title_02">Merzouga Restaurant</h3>
+            <p class="proj-desc" data-i18n="proj_desc_02">A clean, atmospheric restaurant website featuring an online menu and a visual identity that matches the warmth of the dining experience. Built to feel as inviting as the food itself.</p>
+            <div class="proj-tech" aria-label="Technologies used">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <div class="proj-links">
+              <a href="https://merzougarestaurant.com" target="_blank" rel="noopener noreferrer" class="btn-outline" data-i18n="live_site">Live Site &#8599;</a>
+            </div>
+          </div>
+        </article>
+
         <div class="proj-grid js-reveal">
-
-          <article class="proj-card" aria-label="Project: Centre Nour">
-            <a href="https://centrenour.site" target="_blank" rel="noopener noreferrer" class="proj-card-link">
-              <div class="proj-card-top">
-                <div class="proj-card-num mono" data-i18n="proj_num_04">04</div>
-                <div class="proj-card-arrow">&#8599;</div>
-              </div>
-              <div class="proj-card-body">
-                <span class="proj-cat" data-i18n="proj_cat_04">Wellness</span>
-                <h3 class="proj-card-title" data-i18n="proj_title_04">Centre Nour</h3>
-                <p data-i18n="proj_desc_04">Professional website for a wellness center, designed to build trust and present services with clarity.</p>
-              </div>
-              <div class="proj-card-foot">
-                <div class="proj-tech small"><span>WordPress</span><span>CSS</span></div>
-              </div>
-            </a>
-          </article>
-
           <article class="proj-card" aria-label="Project: Business Center">
             <a href="https://businesscenter20.netlify.app" target="_blank" rel="noopener noreferrer" class="proj-card-link">
-              <img class="proj-card-image" src="project-businesscenter-live.jpg" alt="Business Center homepage screenshot" loading="lazy" decoding="async">
+              <img class="proj-card-image project-logo" src="logo-business-center.png" alt="Business Center logo" loading="lazy" decoding="async">
               <div class="proj-card-top">
-                <div class="proj-card-num mono" data-i18n="proj_num_05">05</div>
+                <div class="proj-card-num mono" data-i18n="proj_num_08">08</div>
                 <div class="proj-card-arrow">&#8599;</div>
               </div>
               <div class="proj-card-body">
@@ -345,9 +321,9 @@
 
           <article class="proj-card" aria-label="Project: AHR Collections">
             <a href="https://ahrcollections.com" target="_blank" rel="noopener noreferrer" class="proj-card-link">
-              <img class="proj-card-image" src="project-ahr-collections.jpg" alt="AHR Collections homepage screenshot" loading="lazy" decoding="async">
+              <img class="proj-card-image project-logo" src="logo-ahr.svg" alt="AHR Collections logo" loading="lazy" decoding="async">
               <div class="proj-card-top">
-                <div class="proj-card-num mono" data-i18n="proj_num_06">06</div>
+                <div class="proj-card-num mono" data-i18n="proj_num_09">09</div>
                 <div class="proj-card-arrow">&#8599;</div>
               </div>
               <div class="proj-card-body">
@@ -360,43 +336,9 @@
               </div>
             </a>
           </article>
-
-          <article class="proj-card" aria-label="Project: HVAC UMAREQ">
-            <a href="https://hvac.umareq.com/" target="_blank" rel="noopener noreferrer" class="proj-card-link">
-              <img class="proj-card-image" src="project-hvac-umareq.jpg" alt="HVAC UMAREQ homepage screenshot" loading="lazy" decoding="async">
-              <div class="proj-card-top"><span class="proj-card-num mono">07</span><span class="proj-card-arrow">&#8599;</span></div>
-              <div class="proj-card-body"><span class="proj-cat">HVAC</span><h3 class="proj-card-title">HVAC UMAREQ</h3></div>
-            </a>
-          </article>
-          <article class="proj-card" aria-label="Project: Climatisation Maroc Pro">
-            <a href="https://climatisationmarocpro.com/" target="_blank" rel="noopener noreferrer" class="proj-card-link">
-              <img class="proj-card-image" src="project-climatisation-maroc-pro.jpg" alt="Climatisation Maroc Pro homepage screenshot" loading="lazy" decoding="async">
-              <div class="proj-card-top"><span class="proj-card-num mono">08</span><span class="proj-card-arrow">&#8599;</span></div>
-              <div class="proj-card-body"><span class="proj-cat">HVAC</span><h3 class="proj-card-title">Climatisation Maroc Pro</h3></div>
-            </a>
-          </article>
-          <article class="proj-card" aria-label="Project: Climatisation Maroc">
-            <a href="https://climatisationmaroc.com/" target="_blank" rel="noopener noreferrer" class="proj-card-link">
-              <img class="proj-card-image" src="project-climatisation-maroc.jpg" alt="Climatisation Maroc homepage screenshot" loading="lazy" decoding="async">
-              <div class="proj-card-top"><span class="proj-card-num mono">09</span><span class="proj-card-arrow">&#8599;</span></div>
-              <div class="proj-card-body"><span class="proj-cat">HVAC</span><h3 class="proj-card-title">Climatisation Maroc</h3></div>
-            </a>
-          </article>
-          <article class="proj-card" aria-label="Project: Eden Parts">
-            <a href="https://eden-parts.netlify.app/" target="_blank" rel="noopener noreferrer" class="proj-card-link">
-              <img class="proj-card-image" src="project-eden-parts.jpg" alt="Eden Parts homepage screenshot" loading="lazy" decoding="async">
-              <div class="proj-card-top"><span class="proj-card-num mono">10</span><span class="proj-card-arrow">&#8599;</span></div>
-              <div class="proj-card-body"><span class="proj-cat">Auto Parts</span><h3 class="proj-card-title">Eden Parts</h3></div>
-            </a>
-          </article>
         </div>
-      </div>
-    </section>
 
-
-    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• SKILLS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
-
-    <section id="qa-testing" class="section qa-section" aria-labelledby="qa-heading">
+<section id="qa-testing" class="section qa-section" aria-labelledby="qa-heading">
       <div class="section-wrap">
         <div class="section-label-row"><span class="mono sec-num">04</span><span class="sec-name">Software Quality Assurance</span></div>
         <h2 class="sec-heading reveal-up" id="qa-heading">Quality Assurance &amp; Software Testing</h2>

@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Abderrahim Rachidi</title>
+  <meta name="description" content="Learn about Abderrahim Rachidi, a frontend developer and QA tester based in Morocco.">
+  <meta property="og:title" content="About | Abderrahim Rachidi">
+  <meta property="og:description" content="About Abderrahim Rachidi, frontend developer and QA tester based in Morocco.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://abderrahimportfolio.netlify.app/about.html">
+  <meta property="og:image" content="https://abderrahimportfolio.netlify.app/portfopic.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Cairo:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="about">
+  <div id="lang-splash" role="dialog" aria-modal="true" aria-label="Language selection">
+    <div class="splash-inner">
+      <div class="splash-logo"><span>A</span><span class="accent-letter">R</span></div>
+      <p class="splash-name">Abderrahim Rachidi</p>
+      <p class="splash-hint mono">Select &#183; Choisir &#183; &#1575;&#1582;&#1578;&#1585;</p>
+      <div class="splash-btns">
+        <button class="splash-lang-btn" data-lang="en" aria-label="English">
+          <span class="splang-code">EN</span>
+          <span class="splang-name">English</span>
+        </button>
+        <button class="splash-lang-btn" data-lang="fr" aria-label="Fran&#231;ais">
+          <span class="splang-code">FR</span>
+          <span class="splang-name">Fran&#231;ais</span>
+        </button>
+        <button class="splash-lang-btn" data-lang="ar" aria-label="&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577">
+          <span class="splang-code ar-code">&#1593;</span>
+          <span class="splang-name ar-name">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• NAV â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+  <header id="site-header">
+    <div class="nav-inner">
+      <a href="index.html#home" class="nav-logo" aria-label="Home">
+        <span>A</span><span class="accent-letter">R</span>
+      </a>
+
+      <nav class="nav-links" role="navigation" aria-label="Main navigation">
+        <a href="index.html#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link" data-i18n="nav_about">About</a>
+        <a href="index.html#work" class="nav-link">Development</a>
+        <a href="index.html#qa-testing" class="nav-link">QA Testing</a>
+        <a href="index.html#skills" class="nav-link" data-i18n="nav_skills">Skills</a>
+        <a href="index.html#contact" class="nav-link" data-i18n="nav_contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Language switcher -->
+        <div class="lang-switcher" aria-label="Language switcher" role="group">
+          <button class="lang-sw-btn active" data-lang="en" aria-label="English">EN</button>
+          <button class="lang-sw-btn"        data-lang="fr" aria-label="Fran&#231;ais">FR</button>
+          <button class="lang-sw-btn"        data-lang="ar" aria-label="&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577">&#1593;</button>
+        </div>
+
+        <a href="https://www.linkedin.com/in/abderrahim-rachidi-96b049362"
+           target="_blank" rel="noopener noreferrer" class="nav-social" aria-label="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+          </svg>
+        </a>
+        <a href="https://github.com/ABRACHY"
+           target="_blank" rel="noopener noreferrer" class="nav-social" aria-label="GitHub">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+          </svg>
+        </a>
+
+        <button class="nav-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" role="dialog" aria-label="Navigation menu" aria-hidden="true">
+      <nav>
+        <a href="index.html#home" class="mobile-link">Home</a>
+        <a href="#about" class="mobile-link" data-i18n="nav_about">About</a>
+        <a href="index.html#work" class="mobile-link">Development</a>
+        <a href="index.html#qa-testing" class="mobile-link">QA Testing</a>
+        <a href="index.html#skills" class="mobile-link" data-i18n="nav_skills">Skills</a>
+        <a href="index.html#contact" class="mobile-link" data-i18n="nav_contact">Contact</a>
+      </nav>
+      <div class="mobile-lang-row">
+        <button class="lang-sw-btn active" data-lang="en" aria-label="English">EN</button>
+        <button class="lang-sw-btn"        data-lang="fr" aria-label="Fran&#231;ais">FR</button>
+        <button class="lang-sw-btn"        data-lang="ar" aria-label="&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577">&#1593;</button>
+      </div>
+      <div class="mobile-socials">
+        <a href="https://www.linkedin.com/in/abderrahim-rachidi-96b049362" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/ABRACHY" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="mailto:abdoforbusiness90@gmail.com">Email</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• ABOUT â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+    <section id="about" class="section about-section">
+      <div class="section-wrap">
+        <div class="section-label-row">
+          <span class="mono sec-num" data-i18n="sec_01">01</span>
+          <span class="sec-name" data-i18n="sec_01_name">About</span>
+        </div>
+
+        <div class="about-layout">
+          <div class="about-left">
+            <h2 class="sec-heading reveal-up" data-i18n-html="about_heading">
+              I build things<br>people <em>actually</em><br>enjoy using.
+            </h2>
+          </div>
+
+          <div class="about-right reveal-up" style="--delay:.15s">
+            <p class="about-lead" data-i18n="about_lead">
+              I'm Abderrahim &#8212; a self-taught frontend developer and digital experience creator based in Morocco.
+            </p>
+            <p data-i18n="about_p1">
+              I got into web development because I was fascinated by the gap between what an idea looks like in someone's head and what actually ends up on screen. That gap is where I work.
+            </p>
+            <p data-i18n-html="about_p2">
+              I learned by doing: building pages, fixing problems, and slowly developing a sense for what makes a digital product feel <em>right</em> &#8212; not just functional, but intentional. Every project I take on is a chance to combine clean code with thoughtful design.
+            </p>
+            <p data-i18n="about_p3">
+              I care about performance, accessibility, and the kind of details most people don't consciously notice &#8212; but definitely feel.
+            </p>
+
+            <div class="about-values">
+              <div class="value-item">
+                <span class="mono value-label" data-i18n="val1_label">Philosophy</span>
+                <span class="value-text" data-i18n="val1_text">Build with intention. Ship with clarity.</span>
+              </div>
+              <div class="value-item">
+                <span class="mono value-label" data-i18n="val2_label">Approach</span>
+                <span class="value-text" data-i18n="val2_text">Design-first, code-informed, user-centered.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• FOOTER â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+  <footer>
+    <div class="footer-inner">
+      <span class="footer-brand">Abderrahim Rachidi</span>
+      <span class="mono footer-copy">
+        &copy; <span id="footer-year">2026</span>
+        <span data-i18n="footer_copy">&#8212; Built with intention.</span>
+      </span>
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/abderrahim-rachidi-96b049362" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/ABRACHY" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

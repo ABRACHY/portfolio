@@ -75,9 +75,12 @@ document.addEventListener('DOMContentLoaded', () => {
     document.documentElement.lang = lang;
     document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
     document.documentElement.dataset.language = lang;
-    document.title = 'Abderrahim Rachidi | Frontend Developer & QA Tester';
+    const isAboutPage = document.body.dataset.page === 'about';
+    document.title = isAboutPage ? 'About | Abderrahim Rachidi' : 'Abderrahim Rachidi | Frontend Developer & QA Tester';
     const description = document.querySelector('meta[name="description"]');
-    if (description) description.content = 'Portfolio of Abderrahim Rachidi, showcasing frontend development projects and software quality assurance skills.';
+    if (description) description.content = isAboutPage
+      ? 'Learn about Abderrahim Rachidi, a frontend developer and QA tester based in Morocco.'
+      : 'Portfolio of Abderrahim Rachidi, showcasing frontend development projects and software quality assurance skills.';
     document.querySelectorAll('[data-i18n], [data-i18n-html]').forEach(el => {
       const key = el.dataset.i18n || el.dataset.i18nHtml;
       if (Object.prototype.hasOwnProperty.call(dictionary, key)) {
